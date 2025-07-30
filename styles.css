@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+    --yellow: hsl(47, 88%, 63%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 42%);
+    --dark-gray: hsl(0, 0%, 7%);
+    --card-font: "Figtree", sans-serif;
+    --small-fs: 14px;
+    --medium-fs: 16px;
+    --title-fs: 24px;
+}
+
+@media (max-width:380px) {
+    :root {
+        --small-fs: 12px;
+        --medium-fs: 14px;
+        --title-fs: 20px;
+    }
+ }
+
+body {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: var(--yellow);
+}
+
+.post-card {
+    color: var(--dark-gray);
+    font-family: var(--card-font);
+    display: grid;
+    
+    gap: 1.5rem;
+    background-color: var(--white);
+    margin-inline: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid black;
+    border-radius: 1.25rem;  
+    box-shadow: 8px 8px 0 0 black;
+}
+
+.post-card__img {
+    object-fit: cover;
+    border-radius: 0.625rem;
+}
+
+.post-card__info {
+    display: grid;
+    gap: .75rem;
+}
+
+.post-status {
+    font-weight: bold;
+    background-color: var(--yellow);
+    width: fit-content;
+    padding: .25rem .75rem;
+    font-size: var(--small-fs);
+    border-radius: 4px;
+}
+
+.post-publish-date {
+    font-size: var(--small-fs);
+}
+
+.post-card__title {
+    font-size: var(--title-fs);
+    font-weight: 900;
+}
+
+.post-card__description {
+    font-size: var(--medium-fs);
+    color: var(--light-gray);
+    max-width: 30ch;
+}
+
+.post-card__author {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+}
+
+.author-img {
+    width: 2rem;
+}
+
+.author-name {
+    font-size: var(--small-fs);
+    font-weight: 900;
+}
