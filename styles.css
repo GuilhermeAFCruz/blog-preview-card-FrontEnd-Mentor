@@ -69,6 +69,15 @@ body {
     font-weight: 900;
 }
 
+.post-card__title > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.post-card__title > a:hover {
+    color: var(--yellow);
+}
+
 .post-card__description {
     font-size: var(--medium-fs);
     color: var(--light-gray);
